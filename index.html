@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<header>
+		<img src="./img/logo.png" alt="logo">
+	</header>
+	
+	<nav>
+		<a href="/">
+			<i class="fas fa-long-arrow-alt-left"></i>
+			<span>Return to Results</span></a>
+	</nav>	
+	
+	<section id="banner">
+	</section>
+
+	<div id="body-container">	
+		<section id="intro">
+			<div class="row">
+				<div class="col-md-7">
+					<h1>Brandywine Living <br/>
+						@ Huntington Terrace
+					</h1>
+					<p id="address">70 Pinelawn Road, Melville, NY 11747</p>
+					<button id="book">Book a Tour</button>
+					<button id="add">Add to Favorites</button>
+				</div>
+				<div class="col-md-5 circle-container">
+					<img src="./img/circle.png" alt="circle">
+					<span>(#1 for you)</span>
+					<p>$6,000-$7000 per month</p>
+				</div>				
+			</div>	
+		</section>
+
+		<section id="notes">
+			<h6>Notes from Rosemary</h6>
+			<div id="note-box">
+				<div id="image-container">
+					<img src="./img/rosemary.png">
+					<p id="date">05.26.2019</p>
+				</div>	
+				<div id="gloria-container">
+					<p>"Gloria, I think Brandywine is the ideal facility for your mom. Their memory care is top notch and it's a reasonable commute (30 mins or less) for both you and your brother. I've prepared a shortlist of points/questions for you to assess when you're ready to schedule your tour. You can view it <a href="/" id="schedule">here	</a>. 
+						<br/>
+						<br/>
+					Feel free to leave me feedback here or via our text conversations."
+						<br/>
+						<br/>
+						<a href="/" id="reply">Reply -></a>
+					</p>
+				<div>	
+			</div>	
+		</section>
+
+		<section id="overview">
+			<h6>Overview</h6>
+			<div class="row">
+				<div class="col-md-6 patricia-info">
+					<img src="./img/patricia.png" alt="patricia">
+					<div>
+						<h4>Patricia Finkelberg</h4>
+						<p>Executive Director</p>
+					</div>	
+				</div>	
+				<div class="col-md-6 patricia-text">
+					<h4>A Vibrant Lifestyle-Independent Living and Assisted Living</h4>
+					<p>Brandywine Living at Huntington Terrace provides beautiful suites designed with comfort, privacy and safety in mind. The grounds are beautifully landscaped and residents take advantage of the magnificent scenery in the spring and fall. Huntington Terrace is an extraordinary senior living community offering two distinct options: assisted living and independent living; all on one beautiful 12-acre campus. Whether it is the resort-like setting of independent living, the elegant, distinguished atmosphere of assisted living, or our state-of-the-art Reflections memory care program, Huntington Terrace is designed to have something for everyone. Whether it's our extraordinary assisted living or our care-free independent apartments, our residents have exciting, educational and, at times, adventurous activities that can rejuvenate the spirit and enhance the quality of their lives.</p>
+				</div>	
+			</div>	
+		</section>	
+
+		<section id="images">
+			<div class="image-modal">
+			  <span class="close" onclick="toggleModal()">&times;</span>
+			  <img class="modal-content" id="img01" src="./img/image.png" alt="building">
+			</div>
+			<h6>Images</h6>
+			<div id="building-container">
+				<div id="expand" onclick="toggleModal()"><i class="fas fa-th"></i></div>
+				<img src="./img/image.png" alt="building">
+			</div>	
+		</section>	
+		
+		<section id="building-facts">
+			<h6>Building Facts</h6>
+			<div class="row">
+				<div class="col-md-4">
+					<ul>
+						<li>Facts</li>
+						<li>244 Units</li>
+						<li>66 Stories</li>
+						<li>4 Floors</li>	
+					</ul>	
+				</div>
+				<div class="col-md-4">
+					<ul>
+						<li>District</li>
+						<li>Community District 101</li>
+						<li>City Council District 1</li>
+						<li>Police Precinct 1</li>	
+					</ul>	
+				</div>
+				<div class="col-md-4">
+					<ul>
+						<li>Floorplans</li>
+						<li><a href="/">77 Floorplans Available</a></li>
+					</ul>	
+				</div>
+				
+					<div class="col-md-4 fact-toggle">
+						<ul>
+							<li>Lorem</li>
+							<li>Neque porro</li>
+							<li>Quisquam</li>
+							<li>Est qui</li>	
+						</ul>	
+					</div>
+					<div class="col-md-4 fact-toggle">
+						<ul>
+							<li>Ipsum</li>
+							<li>Dolorem</li>
+							<li>Quia dolor</li>
+							<li>Sit amet</li>	
+						</ul>	
+					</div>
+			
+			</div>
+
+			<h6 id="view-more" onclick="toggleContent()"><span>View More +</span></h6>	
+		</section>
+	</div>
+
+	<footer>
+		<img src="./img/logo-white.png" alt="logo">
+	</footer>	
+
+<script src="script.js"></script>	
+</body>
+</html>
